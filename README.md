@@ -74,7 +74,7 @@ After imaging and doing a reboot go back and image the opposite
 
 `reboot`
 
-**Access Web Interface (192.168.1.10) [Firefox/Safari may cause problems]**
+**Access Web Interface (192.168.2.10) [Firefox/Safari may cause problems]**
 
 Login *root/SUGAR2A041*
 
@@ -109,7 +109,7 @@ Login *root/SUGAR2A041*
 
 > ***Note After comitting to a new image your SSH key and Login will change you can access the SFP to do further configuration with the following (you may have to delete your stored key from your known keys file)***
 > 
-> `ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group14-sha1 root@192.168.1.10`
+> `ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group14-sha1 root@192.168.2.10`
 
 
 ---
