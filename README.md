@@ -22,15 +22,15 @@
 
 **Secure Copy Firmware to SFP**
 
-*From Linux / Mac open Terminal*
+*From Windows Terminal*
 
-`scp -O -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss firmware.img ONTUSER@192.168.1.10:/tmp/firmware.img` 
+`scp -O -o KexAlgorithms=+diffie-hellman-group1-sha1 -o HostKeyAlgorithms=+ssh-dss C:\Bell\firmware.img root@192.168.2.10:/tmp/firmware.img` 
 
-*Password* `SUGAR2A041`
+*Password* ``
 
 **Configure SFP over SSH**
 
-`ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group14-sha1 ONTUSER@192.168.1.10`
+`ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group14-sha1 root@192.168.2.10`
 
 **Verify image currently being used**
 
